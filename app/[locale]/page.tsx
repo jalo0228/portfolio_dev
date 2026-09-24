@@ -63,6 +63,41 @@ export default async function PortfolioPage({ params }: { params: Promise<{ loca
         </div>
       </section>
 
+      <section id="experience" className="section section-shell experience-section">
+        <div className="experience-heading">
+          <div>
+            <p className="eyebrow">{t.workExperience.label}</p>
+            <h2>{t.workExperience.company}</h2>
+          </div>
+          <div className="experience-meta">
+            <strong>{t.workExperience.role}</strong>
+            <span>{t.workExperience.period}</span>
+          </div>
+        </div>
+
+        <p className="experience-summary">{t.workExperience.summary}</p>
+
+        <div className="experience-grid">
+          {t.workExperience.items.map((item) => (
+            <article className="experience-card" key={item.index}>
+              <div className="experience-card-top">
+                <span>{item.index}</span>
+                <div className="experience-card-metrics">
+                  {item.metrics.map(([label, value]) => (
+                    <div key={label}>
+                      <small>{label}</small>
+                      <strong>{value}</strong>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <h3>{item.title}</h3>
+              <p>{item.description}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
       <section id="projects" className="section section-shell">
         <p className="eyebrow">{t.projectsLabel}</p>
         <div className="section-heading"><h2>{t.projectsTitle}</h2><span className="section-count">03</span></div>
