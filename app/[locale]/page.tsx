@@ -34,6 +34,7 @@ export default async function PortfolioPage({ params }: { params: Promise<{ loca
               ["about", locale === "ko" ? "소개" : "About"],
               ["experience", locale === "ko" ? "경력" : "Experience"],
               ["projects", locale === "ko" ? "프로젝트" : "Projects"],
+              ["interests", locale === "ko" ? "관심사 / 프로젝트" : "Interests / Projects"],
               ["skills", locale === "ko" ? "기술" : "Skills"],
               ["contact", "Contact"],
             ].map(([id, label]) => (
@@ -130,6 +131,21 @@ export default async function PortfolioPage({ params }: { params: Promise<{ loca
                   card={t.projectCards[slug]}
                   cta={t.viewCaseStudy}
                 />
+              ))}
+            </div>
+          </section>
+
+          <section id="interests" className="content-section">
+            <p className="section-label">{t.interestsProjects.label}</p>
+            <div className="interest-project-list">
+              {t.interestsProjects.items.map((item) => (
+                <article className="interest-project-row" key={item.title}>
+                  <span className="interest-project-type">{item.type}</span>
+                  <div>
+                    <h3>{item.title}</h3>
+                    <p>{item.description}</p>
+                  </div>
+                </article>
               ))}
             </div>
           </section>
