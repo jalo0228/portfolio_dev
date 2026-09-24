@@ -3,6 +3,7 @@ import type { Locale, ProjectSlug } from "@/lib/content";
 
 type Card = {
   index: string;
+  period: string;
   title: string;
   subtitle: string;
   description: string;
@@ -16,6 +17,7 @@ export default function ProjectCard({ locale, slug, card, cta }: { locale: Local
       <Link className="project-card-link" href={`/${locale}/projects/${slug}`}>
         <div className="project-card-aside">
           <span className="project-index">{card.index}</span>
+          <time className="project-period">{card.period}</time>
           <div className="project-metrics">
             {card.metrics.map(([label, value]) => (
               <div className="project-metric" key={label}>
