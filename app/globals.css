@@ -348,7 +348,15 @@ a { color: inherit; text-decoration: none; }
   font-size: 9px;
   font-weight: 800;
   letter-spacing: .12em;
-  margin-bottom: 15px;
+  margin-bottom: 7px;
+}
+.project-period {
+  display: block;
+  margin-bottom: 14px;
+  color: var(--muted-2);
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: .06em;
 }
 .project-metrics { display: grid; gap: 10px; }
 .project-metric small {
@@ -396,6 +404,35 @@ a { color: inherit; text-decoration: none; }
   font-weight: 800;
   letter-spacing: .08em;
   text-transform: uppercase;
+}
+
+/* Interests / Projects */
+.interest-project-list { display: grid; }
+.interest-project-row {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 18px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--line);
+}
+.interest-project-row:first-child { border-top: 1px solid var(--line); }
+.interest-project-type {
+  color: var(--accent);
+  font-size: 9px;
+  font-weight: 850;
+  letter-spacing: .12em;
+  padding-top: 4px;
+}
+.interest-project-row h3 {
+  margin: 0 0 7px;
+  color: var(--text-strong);
+  font-size: 14px;
+}
+.interest-project-row p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.7;
 }
 
 /* Skills + focus */
@@ -682,9 +719,11 @@ a { color: inherit; text-decoration: none; }
   .experience-overview-head { grid-template-columns: 1fr; gap: 8px; }
   .experience-row { grid-template-columns: 32px 1fr; gap: 10px; }
   .project-card-link { grid-template-columns: 1fr; gap: 10px; padding: 20px 10px; }
-  .project-card-aside { display: flex; align-items: center; gap: 16px; }
+  .project-card-aside { display: flex; align-items: center; flex-wrap: wrap; gap: 10px 16px; }
   .project-index { margin: 0; }
-  .project-metrics { display: flex; gap: 16px; }
+  .project-period { margin: 0; }
+  .project-metrics { display: flex; gap: 16px; width: 100%; }
+  .interest-project-row { grid-template-columns: 1fr; gap: 7px; }
   .skill-row { grid-template-columns: 1fr; gap: 10px; }
   .portfolio-footer { flex-direction: column; }
   .project-hero { padding-top: 48px; }
