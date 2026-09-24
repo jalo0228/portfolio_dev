@@ -10,7 +10,7 @@ export default function Header({ locale, suffix = "" }: { locale: Locale; suffix
         <Link href={`/${locale}#about`}>About</Link>
         <Link href={`/${locale}#projects`}>Projects</Link>
         <Link href={`/${locale}#skills`}>Skills</Link>
-        <Link href={`/${locale}#journey`}>Journey</Link>
+        <Link href={`/${locale}#experience`}>Experience</Link>
         <Link href={`/${locale}#contact`}>Contact</Link>
       </nav>
       <Link className="lang-switch" href={`/${other}${suffix}`} aria-label={`Switch to ${other === "ko" ? "Korean" : "English"}`}>
