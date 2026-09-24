@@ -176,11 +176,11 @@ export const content = {
       label: "SKILLS",
       title: "Tech Stack",
       groups: [
-        ["AI / Agent Engineering", ["LangChain", "RAG", "Microsoft GraphRAG", "Multi-Agent Architecture", "Pydantic"]],
+        ["AI / Agent Engineering", ["LangChain", "RAG", "Microsoft GraphRAG", "Multi-Agent Architecture", "Knowledge Graph", "Vector DB", "Pydantic"]],
         ["LLM", ["Gemini 2.5 Flash", "Google Gemini"]],
-        ["Backend", ["Python", "Flask", "Java", "Spring Boot", "Spring Data JPA", "Node.js", "Express.js"]],
-        ["Data / Retrieval", ["MySQL", "SQLite Vector Store", "Embedding", "Vector Search", "Cosine Similarity"]],
-        ["Cloud / Platform", ["Azure", "Azure AI Foundry", "Microsoft Copilot", "Copilot Studio"]],
+        ["Backend", ["Python", "FastAPI", "Flask", "Java", "Spring Boot", "Spring Data JPA", "Node.js", "Express.js"]],
+        ["Data / Retrieval", ["Airflow", "MySQL", "SQLite Vector Store", "Embedding", "Vector Search", "Cosine Similarity"]],
+        ["Cloud / Platform", ["Azure", "Azure AI Foundry", "Microsoft Copilot", "Copilot Studio", "Kubernetes"]],
         ["DevOps", ["Docker", "Docker Hub", "Git", "GitHub"]]
       ]
     },
