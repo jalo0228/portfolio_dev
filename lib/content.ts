@@ -79,11 +79,11 @@ export const content = {
       label: "SKILLS",
       title: "Tech Stack",
       groups: [
-        ["AI / Agent Engineering", ["LangChain", "RAG", "Microsoft GraphRAG", "Multi-Agent Architecture", "Pydantic"]],
+        ["AI / Agent Engineering", ["LangChain", "RAG", "Microsoft GraphRAG", "Multi-Agent Architecture", "Knowledge Graph", "Vector DB", "Pydantic"]],
         ["LLM", ["Gemini 2.5 Flash", "Google Gemini"]],
-        ["Backend", ["Python", "Flask", "Java", "Spring Boot", "Spring Data JPA", "Node.js", "Express.js"]],
-        ["Data / Retrieval", ["MySQL", "SQLite Vector Store", "Embedding", "Vector Search", "Cosine Similarity"]],
-        ["Cloud / Platform", ["Azure", "Azure AI Foundry", "Microsoft Copilot", "Copilot Studio"]],
+        ["Backend", ["Python", "FastAPI", "Flask", "Java", "Spring Boot", "Spring Data JPA", "Node.js", "Express.js"]],
+        ["Data / Retrieval", ["Airflow", "MySQL", "SQLite Vector Store", "Embedding", "Vector Search", "Cosine Similarity"]],
+        ["Cloud / Platform", ["Azure", "Azure AI Foundry", "Microsoft Copilot", "Copilot Studio", "Kubernetes"]],
         ["DevOps", ["Docker", "Docker Hub", "Git", "GitHub"]]
       ]
     },
@@ -223,7 +223,7 @@ export const projectDetails = {
       roleTitle: "My Role",
       roles: ["AI Agent Architecture Design", "GraphRAG Retrieval Architecture", "Multi-Agent Workflow Design", "Agent Implementation", "Microsoft Copilot Integration"],
       resultTitle: "Result",
-      result: "관계 기반 Retrieval로 챗봇 응답 정확도 95% 이상을 달성했고, 데이터 분석·Retrieval·응답 생성으로 역할을 분리한 Multi-Agent 구조를 통해 LLM Token 사용량을 30% 절감했습니다.",
+      result: "관계 기반 Retrieval로 챗봇 응답 정확도 95% 이상을 달성했고, 데이터 분석·Retrieval·응답 생성으로 역할을 분리한 Multi-Agent 구조를 통해 LLM Token 사용량을 30% 절감했습니다. 불필요한 LLM 호출과 API 비용을 줄여 고객사의 예산 제약에 맞는 Agent 구조로 최적화했습니다.",
       stack: ["Python", "Azure", "Azure AI Foundry", "Microsoft GraphRAG", "Multi-Agent Architecture", "Microsoft Copilot"]
     },
     en: {
@@ -244,7 +244,7 @@ export const projectDetails = {
       roleTitle: "My Role",
       roles: ["AI Agent Architecture Design", "GraphRAG Retrieval Architecture", "Multi-Agent Workflow Design", "Agent Implementation", "Microsoft Copilot Integration"],
       resultTitle: "Result",
-      result: "Achieved over 95% chatbot response accuracy with relationship-aware retrieval and reduced LLM token usage by 30% by separating data analysis, retrieval, and response generation into a Multi-Agent architecture.",
+      result: "Achieved over 95% chatbot response accuracy with relationship-aware retrieval and reduced LLM token usage by 30% by separating data analysis, retrieval, and response generation into a Multi-Agent architecture. Reducing unnecessary LLM calls and API cost helped optimize the agent for the client's budget constraints.",
       stack: ["Python", "Azure", "Azure AI Foundry", "Microsoft GraphRAG", "Multi-Agent Architecture", "Microsoft Copilot"]
     }
   },
@@ -263,7 +263,7 @@ export const projectDetails = {
       roleTitle: "My Role",
       roles: ["Project Lead", "Backend Development", "AI / LLM Pipeline Design & Development"],
       resultTitle: "What I Learned",
-      result: "학생별 개인화 데이터를 안정적으로 관리하고, 구조화된 스터디 가이드와 문제를 자동 생성하는 End-to-End AI 서비스를 구현했습니다. 팀 리드로서 일정·마일스톤·역할 분담과 공통 개발 환경을 주도했습니다.",
+      result: "학생별 개인화 데이터베이스를 개별 구축·관리해 맞춤형 학습 데이터를 안정적으로 처리하고, 구조화된 스터디 가이드와 문제를 자동 생성하는 End-to-End AI 서비스를 구현했습니다. 팀 리드로서 일정·마일스톤·역할 분담과 공통 개발 환경을 주도했습니다.",
       stack: ["Gemini 2.5 Flash", "Python", "Flask", "LangChain", "Pydantic", "Node.js", "Express.js", "Java", "Spring Boot", "Spring Data JPA", "MySQL", "Docker"]
     },
     en: {
@@ -280,7 +280,7 @@ export const projectDetails = {
       roleTitle: "My Role",
       roles: ["Project Lead", "Backend Development", "AI / LLM Pipeline Design & Development"],
       resultTitle: "What I Learned",
-      result: "Built an end-to-end AI service that manages personalized learning data and automatically generates structured study guides and quiz content. As project lead, I drove milestones, role allocation, and the shared development environment.",
+      result: "Built and managed per-student personalized databases for stable learning data processing, and delivered an end-to-end AI service that automatically generates structured study guides and quiz content. As project lead, I drove milestones, role allocation, and the shared development environment.",
       stack: ["Gemini 2.5 Flash", "Python", "Flask", "LangChain", "Pydantic", "Node.js", "Express.js", "Java", "Spring Boot", "Spring Data JPA", "MySQL", "Docker"]
     }
   },
