@@ -15,7 +15,7 @@ export const content = {
       description: "Data Pipeline과 RAG, Multi-Agent 구조를 설계해 실제 운영 환경에서 동작하는 AI 시스템을 만듭니다.",
       primary: "프로젝트 보기",
       secondary: "Contact",
-      tags: ["RAG", "Multi-Agent", "Airflow", "FastAPI", "Microsoft Azure"],
+      tags: ["RAG", "Multi-Agent", "Airflow", "FastAPI", "Azure"],
 
     },
     about: {
@@ -134,7 +134,7 @@ export const content = {
       description: "I design data pipelines, RAG systems, and Multi-Agent architectures that run in real production environments.",
       primary: "Explore Projects",
       secondary: "Contact",
-      tags: ["RAG", "Multi-Agent", "Airflow", "FastAPI", "Microsoft Azure"],
+      tags: ["RAG", "Multi-Agent", "Airflow", "FastAPI", "Azure"],
 
     },
     about: {
