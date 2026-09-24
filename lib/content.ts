@@ -12,19 +12,19 @@ export const content = {
     hero: {
       eyebrow: "AI AGENT DEVELOPER",
       title: ["데이터를 검색하고, 판단하고,", "실제 문제를 해결하는 AI 시스템을 만듭니다."],
-      description: "대규모 데이터 파이프라인부터 RAG, GraphRAG, Multi-Agent까지 실제 운영 환경에서 동작하는 AI 시스템을 설계하고 구현합니다.",
+      description: "Data Pipeline, RAG, Multi-Agent 구조를 설계하여 실제 운영 환경에서 동작하는 AI 시스템을 만듭니다.",
       primary: "프로젝트 보기",
       secondary: "Contact",
-      tags: ["RAG", "Microsoft GraphRAG", "Multi-Agent", "FastAPI", "Airflow", "Azure AI Foundry"],
+      tags: ["RAG", "Multi-Agent", "Airflow", "FastAPI", "Microsoft Azure"],
 
     },
     about: {
       label: "ABOUT ME",
       title: "문제와 데이터를 먼저 이해하는 AI Agent 개발자",
       body: [
-        "안녕하세요. 실제 문제 해결에 강한 AI Agent 개발자를 목표로 하고 있는 김유현입니다.",
+        "안녕하세요. 사용자의 문제를 기술로 해결하는 AI Agent 개발자를 목표로 하고 있는 김유현입니다.",
         "LLM과 RAG를 기반으로 AI 시스템을 설계하고, 서비스의 데이터 특성과 사용자 흐름에 맞는 Agent Architecture를 고민해왔습니다.",
-        "개인화 학습 AI, 육아기록 기반 발달 점검 AI, 제조 데이터 분석 Agent까지 서로 다른 문제를 AI 시스템으로 구현해왔습니다.",
+        "개인화 학습 AI, 육아기록 기반 발달 점검 AI, 제조 데이터 분석 Agent까지 서로 다른 문제를 AI 시스템으로 구현해왔습니다. 특히 육아기록 기반 발달 점검 AI에서는 조기 스크리닝을 통해 의료 사각지대를 줄이고 사회적 비용 절감에 기여하는 ESG 관점의 문제 해결을 경험했습니다.",
         "단순히 새로운 모델을 사용하는 것보다 어떤 데이터를 검색하고, 어떤 흐름으로 추론하며, 어떻게 신뢰할 수 있는 결과를 전달할 것인지에 관심이 있습니다."
       ],
       educationLabel: "EDUCATION",
@@ -84,7 +84,7 @@ export const content = {
       }
     },
     interestsProjects: {
-      label: "INTERESTS / PROJECTS",
+      label: "INTERESTS",
       items: [
         {
           type: "INTEREST",
@@ -94,7 +94,7 @@ export const content = {
         {
           type: "PROJECT",
           title: "Ontology",
-          description: "와인 추천 챗봇을 위한 Ontology를 구축했습니다."
+          description: "와인 추천 챗봇을 위한 Ontology를 구현하고 있습니다."
         }
       ]
     },
@@ -113,12 +113,11 @@ export const content = {
       label: "SKILLS",
       title: "Tech Stack",
       groups: [
-        ["AI / Agent Engineering", ["LangChain", "RAG", "Microsoft GraphRAG", "Multi-Agent Architecture", "Knowledge Graph", "Vector DB", "Pydantic"]],
-        ["LLM", ["Gemini 2.5 Flash", "Google Gemini"]],
-        ["Backend", ["Python", "FastAPI", "Flask", "Java", "Spring Boot", "Spring Data JPA", "Node.js", "Express.js"]],
-        ["Data / Retrieval", ["Airflow", "MySQL", "SQLite Vector Store", "Embedding", "Vector Search", "Cosine Similarity"]],
-        ["Cloud / Platform", ["Azure", "Azure AI Foundry", "Microsoft Copilot", "Copilot Studio", "Kubernetes"]],
-        ["DevOps", ["Docker", "Docker Hub", "Git", "GitHub"]]
+        ["LLM", ["Gemini 2.5 Flash"]],
+        ["Backend", ["Python", "FastAPI", "Java", "Node.js"]],
+        ["Data / Retrieval", ["Airflow", "MySQL", "SQLite Vector Store", "Cosine Similarity"]],
+        ["Cloud / Platform", ["Azure", "Microsoft AI Foundry", "Kubernetes"]],
+        ["DevOps", ["Docker", "GitHub"]]
       ]
     },
     journey: {
@@ -143,20 +142,20 @@ export const content = {
     hero: {
       eyebrow: "AI AGENT DEVELOPER",
       title: ["I build AI systems that retrieve, reason,", "and solve real-world problems."],
-      description: "I design and build production AI systems, from large-scale data pipelines to RAG, GraphRAG, and Multi-Agent workflows.",
+      description: "I design Data Pipeline, RAG, and Multi-Agent architectures for AI systems that run in real production environments.",
       primary: "Explore Projects",
       secondary: "Contact",
-      tags: ["RAG", "Microsoft GraphRAG", "Multi-Agent", "FastAPI", "Airflow", "Azure AI Foundry"],
+      tags: ["RAG", "Multi-Agent", "Airflow", "FastAPI", "Microsoft Azure"],
 
     },
     about: {
       label: "ABOUT ME",
       title: "An AI Agent developer who starts with the problem and the data",
       body: [
-        "Hi, I'm Youhyun Kim, an AI Agent developer focused on solving real-world problems with AI systems.",
-        "I design LLM and RAG-based systems with an emphasis on adapting agent architectures to the data, workflow, and requirements of each service.",
-        "My projects span personalized learning, child development screening from parenting records, and AI agents for manufacturing data analysis.",
-        "Rather than simply connecting a model to an application, I focus on how data is retrieved, how reasoning flows are structured, and how reliable outputs are delivered to users."
+        "Hi, I'm Youhyun Kim, an aspiring AI Agent developer focused on solving user problems through technology.",
+        "I design LLM and RAG-based AI systems and think carefully about Agent Architecture that fits each service's data characteristics and user flow.",
+        "My work spans personalized learning AI, AI-assisted development screening from parenting records, and manufacturing data analysis agents. In the parenting-record project, I also explored an ESG-oriented approach to reducing healthcare blind spots and social costs through earlier screening support.",
+        "Rather than simply using a new model, I focus on what data should be retrieved, how the reasoning flow should be structured, and how reliable results should be delivered to users."
       ],
       educationLabel: "EDUCATION",
       education: ["Pennsylvania State University - University Park", "B.S. Computer Science", "Minor in Statistics", "2020.08 – 2026.05"]
@@ -215,7 +214,7 @@ export const content = {
       }
     },
     interestsProjects: {
-      label: "INTERESTS / PROJECTS",
+      label: "INTERESTS",
       items: [
         {
           type: "INTEREST",
@@ -225,7 +224,7 @@ export const content = {
         {
           type: "PROJECT",
           title: "Ontology",
-          description: "Built an ontology for a wine recommendation chatbot."
+          description: "Currently implementing an ontology for a wine recommendation chatbot."
         }
       ]
     },
@@ -244,12 +243,11 @@ export const content = {
       label: "SKILLS",
       title: "Tech Stack",
       groups: [
-        ["AI / Agent Engineering", ["LangChain", "RAG", "Microsoft GraphRAG", "Multi-Agent Architecture", "Knowledge Graph", "Vector DB", "Pydantic"]],
-        ["LLM", ["Gemini 2.5 Flash", "Google Gemini"]],
-        ["Backend", ["Python", "FastAPI", "Flask", "Java", "Spring Boot", "Spring Data JPA", "Node.js", "Express.js"]],
-        ["Data / Retrieval", ["Airflow", "MySQL", "SQLite Vector Store", "Embedding", "Vector Search", "Cosine Similarity"]],
-        ["Cloud / Platform", ["Azure", "Azure AI Foundry", "Microsoft Copilot", "Copilot Studio", "Kubernetes"]],
-        ["DevOps", ["Docker", "Docker Hub", "Git", "GitHub"]]
+        ["LLM", ["Gemini 2.5 Flash"]],
+        ["Backend", ["Python", "FastAPI", "Java", "Node.js"]],
+        ["Data / Retrieval", ["Airflow", "MySQL", "SQLite Vector Store", "Cosine Similarity"]],
+        ["Cloud / Platform", ["Azure", "Microsoft AI Foundry", "Kubernetes"]],
+        ["DevOps", ["Docker", "GitHub"]]
       ]
     },
     journey: {
