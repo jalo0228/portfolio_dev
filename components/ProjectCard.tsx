@@ -7,17 +7,17 @@ type Card = {
   subtitle: string;
   description: string;
   tags: readonly string[];
-  metricLabel: string;
-  metric: string;
+  metrics: readonly (readonly [string, string])[];
 };
 
 export default function ProjectCard({ locale, slug, card, cta }: { locale: Locale; slug: ProjectSlug; card: Card; cta: string }) {
   return (
-    <article className={`project-card ${slug === "manufacturing" ? "project-card-featured" : ""}`}>
+    <article className={`project-card project-card-${slug} ${slug === "manufacturing" ? "project-card-featured" : ""}`}>
       <div className="project-card-top">
         <span className="project-index">{card.index}</span>
         <span className="project-label">CASE STUDY</span>
       </div>
+
       <div className="project-card-main">
         <div>
           <h3>{card.title}</h3>
@@ -27,12 +27,21 @@ export default function ProjectCard({ locale, slug, card, cta }: { locale: Local
             {card.tags.map((tag) => <span className="tag" key={tag}>{tag}</span>)}
           </div>
         </div>
-        <div className="project-metric">
-          <span>{card.metricLabel}</span>
-          <strong>{card.metric}</strong>
+
+        <div className="project-metrics">
+          {card.metrics.map(([label, value]) => (
+            <div className="project-metric" key={label}>
+              <span>{label}</span>
+              <strong>{value}</strong>
+            </div>
+          ))}
         </div>
       </div>
-      <Link className="text-link" href={`/${locale}/projects/${slug}`}>{cta} <span>↗</span></Link>
+
+      <div className="project-card-footer">
+        <Link className="text-link" href={`/${locale}/projects/${slug}`}>{cta} <span>↗</span></Link>
+        <span className="project-card-hint">Architecture · Decisions · Results</span>
+      </div>
     </article>
   );
 }
