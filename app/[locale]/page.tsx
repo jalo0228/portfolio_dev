@@ -67,16 +67,6 @@ export default async function PortfolioPage({ params }: { params: Promise<{ loca
               {t.about.body.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
             </div>
 
-            <div className="proof-grid">
-              {t.hero.stats.map(([value, label, note]) => (
-                <article className="proof-item" key={label}>
-                  <strong>{value}</strong>
-                  <span>{label}</span>
-                  <small>{note}</small>
-                </article>
-              ))}
-            </div>
-
             <aside className="education-card">
               <span className="card-kicker">{t.about.educationLabel}</span>
               {t.about.education.map((line, index) =>
