@@ -68,6 +68,7 @@ export const content = {
     projectCards: {
       manufacturing: {
         index: "01",
+        period: "2026.01 – 2026.05",
         title: "Manufacturing AI Agent",
         subtitle: "GraphRAG & Multi-Agent Manufacturing Data Analysis",
         description: "설비·공정 조건·품질 데이터를 Graph 구조로 모델링하고 관계 기반 Retrieval을 적용해 95% 이상의 챗봇 응답 정확도를 달성한 제조 데이터 AI Agent입니다.",
@@ -76,6 +77,7 @@ export const content = {
       },
       nittany: {
         index: "02",
+        period: "2025.09 – 2026.02",
         title: "Nittany AI",
         subtitle: "Nittany Buddy · Personalized AI Learning Assistant",
         description: "데일리 퀴즈와 개인화 학습 가이드를 제공하는 양방향 수학 학습 AI 어시스턴트입니다. 팀 리드로서 풀스택 개발 환경과 LLM 콘텐츠 생성 파이프라인을 함께 설계했습니다.",
@@ -84,12 +86,28 @@ export const content = {
       },
       development: {
         index: "03",
+        period: "2025.06 – 2025.08",
         title: "육아기록 기반 발달 점검 AI",
         subtitle: "RAG-based Development Screening Assistant",
         description: "정부 설문 문항과 육아일기 데이터를 Vector DB로 연결해 자폐 조기 스크리닝을 지원한 RAG 기반 AI 프로토타입입니다.",
         tags: ["LangChain", "Gemini", "KoSimCSE", "Vector DB", "Top-K=5"],
         metrics: [["AWARD", "SOVAC 3rd Place"], ["RETRIEVAL", "Top-K=5"]]
       }
+    },
+    interestsProjects: {
+      label: "INTERESTS / PROJECTS",
+      items: [
+        {
+          type: "INTEREST",
+          title: "데이터 스키마 구축",
+          description: "데이터 구조와 관계를 명확하게 정의하는 스키마 설계에 관심이 있습니다."
+        },
+        {
+          type: "PROJECT",
+          title: "Ontology",
+          description: "와인 추천 챗봇을 위한 Ontology를 구축했습니다."
+        }
+      ]
     },
     whatIBuild: {
       label: "WHAT I BUILD",
@@ -192,6 +210,7 @@ export const content = {
     projectCards: {
       manufacturing: {
         index: "01",
+        period: "2026.01 – 2026.05",
         title: "Manufacturing AI Agent",
         subtitle: "GraphRAG & Multi-Agent Manufacturing Data Analysis",
         description: "A manufacturing data AI agent that models equipment, process conditions, and quality data as a graph, reaching over 95% chatbot response accuracy with relationship-aware retrieval.",
@@ -200,6 +219,7 @@ export const content = {
       },
       nittany: {
         index: "02",
+        period: "2025.09 – 2026.02",
         title: "Nittany AI",
         subtitle: "Nittany Buddy · Personalized AI Learning Assistant",
         description: "An interactive math learning assistant providing daily quizzes and personalized study guides. As project lead, I designed both the full-stack development environment and the LLM content generation pipeline.",
@@ -208,12 +228,28 @@ export const content = {
       },
       development: {
         index: "03",
+        period: "2025.06 – 2025.08",
         title: "Child Development Screening AI",
         subtitle: "RAG-based Development Screening Assistant",
         description: "A RAG-based prototype for autism early screening that connects government questionnaire items with parenting records through a Vector DB.",
         tags: ["LangChain", "Gemini", "KoSimCSE", "Vector DB", "Top-K=5"],
         metrics: [["AWARD", "SOVAC 3rd Place"], ["RETRIEVAL", "Top-K=5"]]
       }
+    },
+    interestsProjects: {
+      label: "INTERESTS / PROJECTS",
+      items: [
+        {
+          type: "INTEREST",
+          title: "Data Schema Design",
+          description: "Interested in designing data schemas that clearly define data structures and relationships."
+        },
+        {
+          type: "PROJECT",
+          title: "Ontology",
+          description: "Built an ontology for a wine recommendation chatbot."
+        }
+      ]
     },
     whatIBuild: {
       label: "WHAT I BUILD",
