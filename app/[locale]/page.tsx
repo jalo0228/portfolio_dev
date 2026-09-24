@@ -2,7 +2,11 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import Header from "@/components/Header";
 import ProjectCard from "@/components/ProjectCard";
-import { content, isLocale, type ProjectSlug } from "@/lib/content";
+import { content, isLocale, locales, type ProjectSlug } from "@/lib/content";
+
+export function generateStaticParams() {
+  return locales.map((locale) => ({ locale }));
+}
 
 export default async function PortfolioPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale: rawLocale } = await params;
