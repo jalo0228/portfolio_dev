@@ -16,12 +16,7 @@ export const content = {
       primary: "프로젝트 보기",
       secondary: "Contact",
       tags: ["RAG", "Microsoft GraphRAG", "Multi-Agent", "FastAPI", "Airflow", "Azure AI Foundry"],
-      stats: [
-        ["75%", "데이터 적재 시간 단축", "8시간 → 2시간"],
-        ["<3s", "API 응답 속도", "70GB+ 데이터"],
-        ["95%+", "챗봇 응답 정확도", "Manufacturing Agent"],
-        ["-30%", "LLM Token Usage", "Multi-Agent"]
-      ]
+
     },
     about: {
       label: "ABOUT ME",
@@ -33,7 +28,7 @@ export const content = {
         "단순히 새로운 모델을 사용하는 것보다 어떤 데이터를 검색하고, 어떤 흐름으로 추론하며, 어떻게 신뢰할 수 있는 결과를 전달할 것인지에 관심이 있습니다."
       ],
       educationLabel: "EDUCATION",
-      education: ["Pennsylvania State University", "B.S. Computer Science", "Minor in Statistics", "2020.08 – 2026.05"]
+      education: ["Pennsylvania State University - University Park", "B.S. Computer Science", "Minor in Statistics", "2020.08 – 2026.05"]
     },
     workExperience: {
       label: "WORK EXPERIENCE",
@@ -158,12 +153,7 @@ export const content = {
       primary: "Explore Projects",
       secondary: "Contact",
       tags: ["RAG", "Microsoft GraphRAG", "Multi-Agent", "FastAPI", "Airflow", "Azure AI Foundry"],
-      stats: [
-        ["75%", "Pipeline runtime reduction", "8h → 2h"],
-        ["<3s", "API response time", "70GB+ data"],
-        ["95%+", "Chatbot response accuracy", "Manufacturing Agent"],
-        ["-30%", "LLM token usage", "Multi-Agent"]
-      ]
+
     },
     about: {
       label: "ABOUT ME",
@@ -175,7 +165,7 @@ export const content = {
         "Rather than simply connecting a model to an application, I focus on how data is retrieved, how reasoning flows are structured, and how reliable outputs are delivered to users."
       ],
       educationLabel: "EDUCATION",
-      education: ["Pennsylvania State University", "B.S. Computer Science", "Minor in Statistics", "2020.08 – 2026.05"]
+      education: ["Pennsylvania State University - University Park", "B.S. Computer Science", "Minor in Statistics", "2020.08 – 2026.05"]
     },
     workExperience: {
       label: "WORK EXPERIENCE",
