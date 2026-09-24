@@ -12,28 +12,23 @@ export const content = {
     hero: {
       eyebrow: "AI AGENT DEVELOPER",
       title: ["데이터를 검색하고, 판단하고,", "실제 문제를 해결하는 AI 시스템을 만듭니다."],
-      description: "대규모 데이터 파이프라인부터 RAG, GraphRAG, Multi-Agent까지 실제 운영 환경에서 동작하는 AI 시스템을 설계하고 구현합니다.",
+      description: "Data Pipeline과 RAG, Multi-Agent 구조를 설계해 실제 운영 환경에서 동작하는 AI 시스템을 만듭니다.",
       primary: "프로젝트 보기",
       secondary: "Contact",
-      tags: ["RAG", "Microsoft GraphRAG", "Multi-Agent", "FastAPI", "Airflow", "Azure AI Foundry"],
-      stats: [
-        ["75%", "데이터 적재 시간 단축", "8시간 → 2시간"],
-        ["<3s", "API 응답 속도", "70GB+ 데이터"],
-        ["95%+", "챗봇 응답 정확도", "Manufacturing Agent"],
-        ["-30%", "LLM Token Usage", "Multi-Agent"]
-      ]
+      tags: ["RAG", "Multi-Agent", "Airflow", "FastAPI", "Azure"],
+
     },
     about: {
       label: "ABOUT ME",
       title: "문제와 데이터를 먼저 이해하는 AI Agent 개발자",
       body: [
-        "안녕하세요. 실제 문제 해결에 강한 AI Agent 개발자를 목표로 하고 있는 김유현입니다.",
+        "안녕하세요. 사용자의 문제를 AI 기술로 해결하는 AI Agent Engineer 김유현입니다.",
         "LLM과 RAG를 기반으로 AI 시스템을 설계하고, 서비스의 데이터 특성과 사용자 흐름에 맞는 Agent Architecture를 고민해왔습니다.",
-        "개인화 학습 AI, 육아기록 기반 발달 점검 AI, 제조 데이터 분석 Agent까지 서로 다른 문제를 AI 시스템으로 구현해왔습니다.",
-        "단순히 새로운 모델을 사용하는 것보다 어떤 데이터를 검색하고, 어떤 흐름으로 추론하며, 어떻게 신뢰할 수 있는 결과를 전달할 것인지에 관심이 있습니다."
+        "개인화 학습 AI, 육아기록 기반 발달 점검 AI, 제조 데이터 분석 Agent 등 서로 다른 문제를 AI 시스템으로 구현해왔습니다. 특히 육아기록 기반 발달 점검 프로젝트에서는 조기 스크리닝을 지원해 의료 사각지대와 사회적 비용을 줄이는 ESG 관점의 문제 해결을 시도했습니다.",
+        "새로운 모델을 사용하는 것 자체보다 어떤 데이터를 검색하고, 어떤 흐름으로 추론하며, 어떻게 신뢰할 수 있는 결과를 전달할 것인지에 더 관심이 있습니다."
       ],
       educationLabel: "EDUCATION",
-      education: ["Pennsylvania State University", "B.S. Computer Science", "Minor in Statistics", "2020.08 – 2026.05"]
+      education: ["Pennsylvania State University - University Park", "B.S. Computer Science", "Minor in Statistics", "2020.08 – 2026.05"]
     },
     workExperience: {
       label: "WORK EXPERIENCE",
@@ -44,21 +39,15 @@ export const content = {
       items: [
         {
           index: "01",
-          title: "대규모 데이터 자동화 파이프라인 및 고성능 백엔드 구축",
-          description: "Airflow 스케줄러 기반의 연·일 단위 데이터 적재 파이프라인을 자동화하고 병목 구간을 최적화해 작업 처리 시간을 8시간에서 2시간으로 단축했습니다. 계층형 FastAPI 구조를 도입해 누적 70GB 이상의 데이터 환경에서도 3초 미만의 응답 속도를 달성했습니다.",
-          metrics: [["PIPELINE", "75% 단축"], ["BACKEND", "< 3s"]]
+          title: "폐쇄망 보험 도메인 sLLM 및 K8s Agent Ops",
+          description: "Knowledge Graph와 Vector DB를 활용해 보험 도메인 데이터를 구조화하고, 폐쇄망 온프레미스 환경에서 sLLM 기반 문제 해결형 Agent를 구현했습니다. 해당 사업 경진대회에서 상위 7위를 달성했습니다.",
+          metrics: [["ENV", "On-Premise"], ["AGENT", "Vector RAG + GraphRAG"]]
         },
         {
           index: "02",
-          title: "폐쇄망 보험 도메인 sLLM 및 K8s Agent Ops",
-          description: "Knowledge Graph와 Vector DB를 활용해 데이터를 구조화하고, 폐쇄망 온프레미스 환경에서 sLLM 기반 문제 해결형 Agent를 구현했습니다. 해당 사업 경진대회에서 상위 7위를 달성했습니다.",
-          metrics: [["ENV", "On-Premise"], ["RANK", "Top 7"]]
-        },
-        {
-          index: "03",
           title: "에너지 도메인 Multi-Agent Routing 및 RAG 챗봇",
-          description: "에너지 도메인 특화 트레이딩 및 질의응답 시스템을 구축했습니다. 질의 유형에 따라 분기하는 Routing Agent와 SQL Agent, RAG Agent를 연결해 Multi-Agent Workflow를 구현했습니다.",
-          metrics: [["FLOW", "Routing"], ["AGENTS", "SQL + RAG"]]
+          description: "에너지 도메인 특화 트레이딩 및 질의응답 시스템을 구축했습니다. 질의 유형에 따라 분기하는 Routing Agent와 SQL Agent, RAG Agent를 연결해 Multi-Agent Workflow를 구현했습니다. 매일 업데이트되는 데이터를 활용하기 위해 Airflow 기반의 연간·일간 데이터 적재 파이프라인을 자동화하고 병목 구간을 최적화해 처리 시간을 8시간에서 2시간으로 단축했습니다. 또한 계층형 FastAPI 구조를 도입해 누적 70GB 이상의 데이터 환경에서도 API 응답 시간을 3초 미만으로 유지했습니다.",
+          metrics: [["PIPELINE", "75% 단축"], ["BACKEND", "< 3s"]]
         }
       ]
     },
@@ -68,6 +57,7 @@ export const content = {
     projectCards: {
       manufacturing: {
         index: "01",
+        period: "2026.01 – 2026.05",
         title: "Manufacturing AI Agent",
         subtitle: "GraphRAG & Multi-Agent Manufacturing Data Analysis",
         description: "설비·공정 조건·품질 데이터를 Graph 구조로 모델링하고 관계 기반 Retrieval을 적용해 95% 이상의 챗봇 응답 정확도를 달성한 제조 데이터 AI Agent입니다.",
@@ -76,6 +66,7 @@ export const content = {
       },
       nittany: {
         index: "02",
+        period: "2025.09 – 2026.02",
         title: "Nittany AI",
         subtitle: "Nittany Buddy · Personalized AI Learning Assistant",
         description: "데일리 퀴즈와 개인화 학습 가이드를 제공하는 양방향 수학 학습 AI 어시스턴트입니다. 팀 리드로서 풀스택 개발 환경과 LLM 콘텐츠 생성 파이프라인을 함께 설계했습니다.",
@@ -84,6 +75,7 @@ export const content = {
       },
       development: {
         index: "03",
+        period: "2025.06 – 2025.08",
         title: "육아기록 기반 발달 점검 AI",
         subtitle: "RAG-based Development Screening Assistant",
         description: "정부 설문 문항과 육아일기 데이터를 Vector DB로 연결해 자폐 조기 스크리닝을 지원한 RAG 기반 AI 프로토타입입니다.",
@@ -91,27 +83,30 @@ export const content = {
         metrics: [["AWARD", "SOVAC 3rd Place"], ["RETRIEVAL", "Top-K=5"]]
       }
     },
-    whatIBuild: {
-      label: "WHAT I BUILD",
-      title: "AI 시스템을 구성하는 핵심 레이어",
+    interestsProjects: {
+      label: "INTERESTS",
       items: [
-        ["01", "RAG Systems", "Embedding, Vector Retrieval, Context Construction, Grounded Generation"],
-        ["02", "Graph Retrieval", "Microsoft GraphRAG를 활용한 Relationship-aware Retrieval"],
-        ["03", "Agent Workflow", "Task Separation, Multi-Agent Architecture, LLM Orchestration"],
-        ["04", "Reliable LLM Output", "Structured Output, Pydantic Validation, Prompt Design"],
-        ["05", "AI Service", "Backend Integration, Cloud Deployment, User-facing AI Service"]
+        {
+          type: "INTEREST",
+          title: "데이터 스키마 설계",
+          description: "데이터 구조와 관계를 명확하게 정의하는 스키마 설계에 관심이 있습니다."
+        },
+        {
+          type: "CURRENT PROJECT",
+          title: "Wine Recommendation Ontology",
+          description: "와인 추천 챗봇을 위한 Ontology를 구현하고 있습니다."
+        }
       ]
     },
     skills: {
       label: "SKILLS",
       title: "Tech Stack",
       groups: [
-        ["AI / Agent Engineering", ["LangChain", "RAG", "Microsoft GraphRAG", "Multi-Agent Architecture", "Knowledge Graph", "Vector DB", "Pydantic"]],
-        ["LLM", ["Gemini 2.5 Flash", "Google Gemini"]],
-        ["Backend", ["Python", "FastAPI", "Flask", "Java", "Spring Boot", "Spring Data JPA", "Node.js", "Express.js"]],
-        ["Data / Retrieval", ["Airflow", "MySQL", "SQLite Vector Store", "Embedding", "Vector Search", "Cosine Similarity"]],
-        ["Cloud / Platform", ["Azure", "Azure AI Foundry", "Microsoft Copilot", "Copilot Studio", "Kubernetes"]],
-        ["DevOps", ["Docker", "Docker Hub", "Git", "GitHub"]]
+        ["LLM", ["Gemini 2.5 Flash"]],
+        ["Backend", ["Python", "FastAPI", "Java", "Node.js"]],
+        ["Data / Retrieval", ["Airflow", "MySQL", "SQLite Vector Store", "Cosine Similarity"]],
+        ["Cloud / Platform", ["Azure", "Azure AI Foundry", "Kubernetes"]],
+        ["DevOps", ["Docker", "GitHub"]]
       ]
     },
     journey: {
@@ -136,28 +131,23 @@ export const content = {
     hero: {
       eyebrow: "AI AGENT DEVELOPER",
       title: ["I build AI systems that retrieve, reason,", "and solve real-world problems."],
-      description: "I design and build production AI systems, from large-scale data pipelines to RAG, GraphRAG, and Multi-Agent workflows.",
+      description: "I design data pipelines, RAG systems, and Multi-Agent architectures that run in real production environments.",
       primary: "Explore Projects",
       secondary: "Contact",
-      tags: ["RAG", "Microsoft GraphRAG", "Multi-Agent", "FastAPI", "Airflow", "Azure AI Foundry"],
-      stats: [
-        ["75%", "Pipeline runtime reduction", "8h → 2h"],
-        ["<3s", "API response time", "70GB+ data"],
-        ["95%+", "Chatbot response accuracy", "Manufacturing Agent"],
-        ["-30%", "LLM token usage", "Multi-Agent"]
-      ]
+      tags: ["RAG", "Multi-Agent", "Airflow", "FastAPI", "Azure"],
+
     },
     about: {
       label: "ABOUT ME",
       title: "An AI Agent developer who starts with the problem and the data",
       body: [
-        "Hi, I'm Youhyun Kim, an AI Agent developer focused on solving real-world problems with AI systems.",
-        "I design LLM and RAG-based systems with an emphasis on adapting agent architectures to the data, workflow, and requirements of each service.",
-        "My projects span personalized learning, child development screening from parenting records, and AI agents for manufacturing data analysis.",
-        "Rather than simply connecting a model to an application, I focus on how data is retrieved, how reasoning flows are structured, and how reliable outputs are delivered to users."
+        "Hi, I'm Youhyun Kim, an AI Agent Engineer focused on solving user problems with AI technology.",
+        "I design LLM and RAG-based AI systems and think carefully about Agent Architecture that fits each service's data characteristics and user flow.",
+        "My work spans personalized learning AI, AI-assisted development screening from parenting records, and manufacturing data analysis agents. In the parenting-record project, I explored an ESG-oriented approach to reducing healthcare blind spots and social costs through earlier screening support.",
+        "Rather than focusing on new models alone, I care more about what data should be retrieved, how reasoning flows should be structured, and how reliable results should be delivered to users."
       ],
       educationLabel: "EDUCATION",
-      education: ["Pennsylvania State University", "B.S. Computer Science", "Minor in Statistics", "2020.08 – 2026.05"]
+      education: ["Pennsylvania State University - University Park", "B.S. Computer Science", "Minor in Statistics", "2020.08 – 2026.05"]
     },
     workExperience: {
       label: "WORK EXPERIENCE",
@@ -168,21 +158,15 @@ export const content = {
       items: [
         {
           index: "01",
-          title: "Large-scale data automation pipeline & high-performance backend",
-          description: "Automated annual and daily ingestion pipelines with Airflow and optimized bottlenecks, reducing processing time from 8 hours to 2 hours. Introduced a layered FastAPI architecture and achieved sub-3-second response times with more than 70GB of accumulated data.",
-          metrics: [["PIPELINE", "75% faster"], ["BACKEND", "< 3s"]]
+          title: "Private-network insurance sLLM & K8s Agent Ops",
+          description: "Structured insurance-domain data using a Knowledge Graph and Vector DB, then implemented a problem-solving sLLM agent in a closed on-premise environment. The project placed in the Top 7 of its business competition.",
+          metrics: [["ENV", "On-Premise"], ["AGENT", "Vector RAG + GraphRAG"]]
         },
         {
           index: "02",
-          title: "Private-network insurance sLLM & K8s Agent Ops",
-          description: "Structured domain data with a Knowledge Graph and Vector DB, and implemented a problem-solving sLLM agent in a closed on-premise environment. The project placed in the Top 7 of its business competition.",
-          metrics: [["ENV", "On-Premise"], ["RANK", "Top 7"]]
-        },
-        {
-          index: "03",
-          title: "Energy-domain Multi-Agent routing & RAG chatbot",
-          description: "Built a domain-specific trading and Q&A system for the energy sector. Implemented a Multi-Agent workflow connecting a query Routing Agent with SQL and RAG agents.",
-          metrics: [["FLOW", "Routing"], ["AGENTS", "SQL + RAG"]]
+          title: "Energy-domain Multi-Agent Routing & RAG chatbot",
+          description: "Built an energy-domain trading and Q&A system and implemented a Multi-Agent workflow connecting a query Routing Agent with SQL and RAG agents. To support continuously updated data, automated annual and daily ingestion pipelines with Airflow and optimized bottlenecks, reducing processing time from 8 hours to 2 hours. I also introduced a layered FastAPI architecture and maintained API response times under 3 seconds with more than 70GB of accumulated data.",
+          metrics: [["PIPELINE", "75% faster"], ["BACKEND", "< 3s"]]
         }
       ]
     },
@@ -192,6 +176,7 @@ export const content = {
     projectCards: {
       manufacturing: {
         index: "01",
+        period: "2026.01 – 2026.05",
         title: "Manufacturing AI Agent",
         subtitle: "GraphRAG & Multi-Agent Manufacturing Data Analysis",
         description: "A manufacturing data AI agent that models equipment, process conditions, and quality data as a graph, reaching over 95% chatbot response accuracy with relationship-aware retrieval.",
@@ -200,6 +185,7 @@ export const content = {
       },
       nittany: {
         index: "02",
+        period: "2025.09 – 2026.02",
         title: "Nittany AI",
         subtitle: "Nittany Buddy · Personalized AI Learning Assistant",
         description: "An interactive math learning assistant providing daily quizzes and personalized study guides. As project lead, I designed both the full-stack development environment and the LLM content generation pipeline.",
@@ -208,6 +194,7 @@ export const content = {
       },
       development: {
         index: "03",
+        period: "2025.06 – 2025.08",
         title: "Child Development Screening AI",
         subtitle: "RAG-based Development Screening Assistant",
         description: "A RAG-based prototype for autism early screening that connects government questionnaire items with parenting records through a Vector DB.",
@@ -215,27 +202,30 @@ export const content = {
         metrics: [["AWARD", "SOVAC 3rd Place"], ["RETRIEVAL", "Top-K=5"]]
       }
     },
-    whatIBuild: {
-      label: "WHAT I BUILD",
-      title: "Core layers of the AI systems I build",
+    interestsProjects: {
+      label: "INTERESTS",
       items: [
-        ["01", "RAG Systems", "Embedding, Vector Retrieval, Context Construction, Grounded Generation"],
-        ["02", "Graph Retrieval", "Relationship-aware retrieval with Microsoft GraphRAG"],
-        ["03", "Agent Workflow", "Task Separation, Multi-Agent Architecture, LLM Orchestration"],
-        ["04", "Reliable LLM Output", "Structured Output, Pydantic Validation, Prompt Design"],
-        ["05", "AI Service", "Backend Integration, Cloud Deployment, User-facing AI Service"]
+        {
+          type: "INTEREST",
+          title: "Data Schema Design",
+          description: "Interested in designing data schemas that clearly define data structures and relationships."
+        },
+        {
+          type: "CURRENT PROJECT",
+          title: "Wine Recommendation Ontology",
+          description: "Currently implementing an ontology for a wine recommendation chatbot."
+        }
       ]
     },
     skills: {
       label: "SKILLS",
       title: "Tech Stack",
       groups: [
-        ["AI / Agent Engineering", ["LangChain", "RAG", "Microsoft GraphRAG", "Multi-Agent Architecture", "Knowledge Graph", "Vector DB", "Pydantic"]],
-        ["LLM", ["Gemini 2.5 Flash", "Google Gemini"]],
-        ["Backend", ["Python", "FastAPI", "Flask", "Java", "Spring Boot", "Spring Data JPA", "Node.js", "Express.js"]],
-        ["Data / Retrieval", ["Airflow", "MySQL", "SQLite Vector Store", "Embedding", "Vector Search", "Cosine Similarity"]],
-        ["Cloud / Platform", ["Azure", "Azure AI Foundry", "Microsoft Copilot", "Copilot Studio", "Kubernetes"]],
-        ["DevOps", ["Docker", "Docker Hub", "Git", "GitHub"]]
+        ["LLM", ["Gemini 2.5 Flash"]],
+        ["Backend", ["Python", "FastAPI", "Java", "Node.js"]],
+        ["Data / Retrieval", ["Airflow", "MySQL", "SQLite Vector Store", "Cosine Similarity"]],
+        ["Cloud / Platform", ["Azure", "Azure AI Foundry", "Kubernetes"]],
+        ["DevOps", ["Docker", "GitHub"]]
       ]
     },
     journey: {
