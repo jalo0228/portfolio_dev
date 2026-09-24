@@ -38,14 +38,60 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
       <section className="detail-section section-shell">
         <p className="eyebrow">02 / {p.architectureTitle.toUpperCase()}</p>
         <h2>{p.architectureTitle}</h2>
-        <div className="architecture-flow">
-          {p.architecture.map((step, index) => (
-            <div className="architecture-step-wrap" key={step + index}>
-              <div className="architecture-step"><span>{String(index + 1).padStart(2, "0")}</span><strong>{step}</strong></div>
-              {index < p.architecture.length - 1 && <div className="architecture-arrow">↓</div>}
+
+        {slug === "manufacturing" ? (
+          <div className="manufacturing-architecture">
+            <div className="architecture-data-layer">
+              <div className="architecture-layer-label">{locale === "ko" ? "MANUFACTURING DATA" : "MANUFACTURING DATA"}</div>
+              <div className="architecture-data-cards">
+                <div><span>01</span><strong>{locale === "ko" ? "설비 데이터" : "Equipment"}</strong></div>
+                <div><span>02</span><strong>{locale === "ko" ? "공정 조건" : "Process Conditions"}</strong></div>
+                <div><span>03</span><strong>{locale === "ko" ? "품질 데이터" : "Quality Data"}</strong></div>
+              </div>
             </div>
-          ))}
-        </div>
+
+            <div className="architecture-connector"><span>RELATIONSHIP MODELING</span><i /></div>
+
+            <div className="architecture-core">
+              <div className="architecture-core-badge">Microsoft</div>
+              <strong>GraphRAG</strong>
+              <p>{locale === "ko" ? "Entity · Relationship 기반 Graph Retrieval" : "Entity · Relationship-aware Graph Retrieval"}</p>
+            </div>
+
+            <div className="architecture-connector"><span>CONTEXT</span><i /></div>
+
+            <div className="agent-lanes">
+              <div className="architecture-layer-label">MULTI-AGENT WORKFLOW</div>
+              <div className="agent-lane-grid">
+                <div className="agent-lane"><span>01</span><strong>Analysis Agent</strong><small>{locale === "ko" ? "질문 의도 및 데이터 분석" : "Query & data analysis"}</small></div>
+                <div className="agent-lane"><span>02</span><strong>Retrieval Agent</strong><small>{locale === "ko" ? "관계 기반 Context 검색" : "Relationship-aware context retrieval"}</small></div>
+                <div className="agent-lane"><span>03</span><strong>Response Agent</strong><small>{locale === "ko" ? "근거 기반 응답 생성" : "Grounded response generation"}</small></div>
+              </div>
+            </div>
+
+            <div className="architecture-connector"><span>DELIVERY</span><i /></div>
+
+            <div className="architecture-output">
+              <div>
+                <span>INTERFACE</span>
+                <strong>Microsoft Copilot</strong>
+              </div>
+              <div className="architecture-kpis">
+                <div><strong>95%+</strong><span>{locale === "ko" ? "응답 정확도" : "Response accuracy"}</span></div>
+                <div><strong>-30%</strong><span>{locale === "ko" ? "Token 사용량" : "Token usage"}</span></div>
+              </div>
+            </div>
+          </div>
+        ) : (
+          <div className="architecture-flow">
+            {p.architecture.map((step, index) => (
+              <div className="architecture-step-wrap" key={step + index}>
+                <div className="architecture-step"><span>{String(index + 1).padStart(2, "0")}</span><strong>{step}</strong></div>
+                {index < p.architecture.length - 1 && <div className="architecture-arrow">↓</div>}
+              </div>
+            ))}
+          </div>
+        )}
       </section>
 
       <section className="detail-section section-shell decision-grid">
