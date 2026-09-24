@@ -198,37 +198,6 @@ a { color: inherit; text-decoration: none; }
 .about-copy p { margin: 0 0 18px; }
 .about-copy strong { color: var(--text-strong); }
 
-.proof-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0,1fr));
-  gap: 10px;
-  margin-top: 34px;
-}
-.proof-item {
-  padding: 18px;
-  border: 1px solid var(--line);
-  background: rgba(15,23,42,.34);
-  border-radius: 12px;
-}
-.proof-item strong {
-  display: block;
-  color: var(--accent);
-  font-size: 24px;
-  letter-spacing: -.03em;
-}
-.proof-item span {
-  display: block;
-  margin-top: 3px;
-  color: var(--text);
-  font-size: 11px;
-  font-weight: 700;
-}
-.proof-item small {
-  display: block;
-  margin-top: 4px;
-  color: var(--muted-2);
-  font-size: 10px;
-}
 .education-card {
   margin-top: 12px;
   display: grid;
