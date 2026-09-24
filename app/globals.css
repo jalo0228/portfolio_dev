@@ -133,6 +133,19 @@ a { color: inherit; text-decoration: none; }
 .profile-nav a:hover { color: var(--text-strong); }
 .profile-nav a:hover .profile-nav-line { width: 58px; background: var(--accent); }
 .profile-bottom { margin-top: auto; }
+.profile-controls { margin-bottom: 18px; }
+.desktop-lang-switch {
+  display: inline-flex;
+  color: var(--muted-2);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: .08em;
+  transition: color .2s ease, border-color .2s ease, background .2s ease;
+}
+.desktop-lang-switch:hover { color: var(--accent); border-color: rgba(94,234,212,.35); background: var(--accent-soft); }
 .profile-tags { display: flex; flex-wrap: wrap; gap: 7px; max-width: 420px; }
 .profile-tags span,
 .tag,
