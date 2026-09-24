@@ -154,18 +154,6 @@ export default async function PortfolioPage({ params }: { params: Promise<{ loca
             </div>
           </section>
 
-          <section className="content-section focus-section">
-            <p className="section-label">{t.whatIBuild.label}</p>
-            <div className="focus-list">
-              {t.whatIBuild.items.map(([index, title, description]) => (
-                <article key={index}>
-                  <span>{index}</span>
-                  <div><h3>{title}</h3><p>{description}</p></div>
-                </article>
-              ))}
-            </div>
-          </section>
-
           <section id="contact" className="content-section contact-section">
             <p className="section-label">{t.contact.label}</p>
             <h2>{t.contact.title}</h2>
