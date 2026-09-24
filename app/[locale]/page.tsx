@@ -34,7 +34,7 @@ export default async function PortfolioPage({ params }: { params: Promise<{ loca
               ["about", locale === "ko" ? "소개" : "About"],
               ["experience", locale === "ko" ? "경력" : "Experience"],
               ["projects", locale === "ko" ? "프로젝트" : "Projects"],
-              ["interests", locale === "ko" ? "관심사 / 프로젝트" : "Interests / Projects"],
+              ["interests", locale === "ko" ? "관심사" : "Interests"],
               ["skills", locale === "ko" ? "기술" : "Skills"],
               ["contact", "Contact"],
             ].map(([id, label]) => (
