@@ -45,6 +45,11 @@ export default async function PortfolioPage({ params }: { params: Promise<{ loca
           </nav>
 
           <div className="profile-bottom">
+            <div className="profile-controls">
+              <Link className="desktop-lang-switch" href={`/${locale === "ko" ? "en" : "ko"}`}>
+                {locale === "ko" ? "KO / EN" : "EN / KO"}
+              </Link>
+            </div>
             <div className="profile-tags">
               {t.hero.tags.map((tag) => <span key={tag}>{tag}</span>)}
             </div>
