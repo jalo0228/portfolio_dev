@@ -22,15 +22,45 @@ export default async function PortfolioPage({ params }: { params: Promise<{ loca
       <section className="hero section-shell">
         <div className="hero-gridline hero-gridline-a" />
         <div className="hero-gridline hero-gridline-b" />
-        <p className="eyebrow">{t.hero.eyebrow}</p>
-        <h1>{t.hero.title[0]}<br />{t.hero.title[1]}</h1>
-        <p className="hero-copy">{t.hero.description}</p>
-        <div className="hero-actions">
-          <Link className="button button-primary" href={`/${locale}#projects`}>{t.hero.primary}</Link>
-          <Link className="button button-secondary" href={`/${locale}#contact`}>{t.hero.secondary}</Link>
+
+        <div className="hero-main">
+          <div className="hero-copy-block">
+            <p className="eyebrow">{t.hero.eyebrow}</p>
+            <h1>{t.hero.title[0]}<br />{t.hero.title[1]}</h1>
+            <p className="hero-copy">{t.hero.description}</p>
+            <div className="hero-actions">
+              <Link className="button button-primary" href={`/${locale}#projects`}>{t.hero.primary}</Link>
+              <Link className="button button-secondary" href={`/${locale}#contact`}>{t.hero.secondary}</Link>
+            </div>
+            <div className="hero-tags">{t.hero.tags.map((tag) => <span key={tag}>{tag}</span>)}</div>
+          </div>
+
+          <aside className="agent-console" aria-label="AI system architecture preview">
+            <div className="agent-console-head">
+              <span>AI SYSTEM / LIVE</span>
+              <span className="agent-status"><i /> READY</span>
+            </div>
+            <div className="agent-flow">
+              <div className="agent-node"><span>01</span><strong>DATA</strong><small>Pipeline · 70GB+</small></div>
+              <div className="agent-line" />
+              <div className="agent-node"><span>02</span><strong>RETRIEVAL</strong><small>RAG · GraphRAG</small></div>
+              <div className="agent-line" />
+              <div className="agent-node"><span>03</span><strong>AGENT</strong><small>Routing · Multi-Agent</small></div>
+              <div className="agent-line" />
+              <div className="agent-node"><span>04</span><strong>SERVICE</strong><small>FastAPI · Azure</small></div>
+            </div>
+          </aside>
         </div>
-        <div className="hero-tags">{t.hero.tags.map((tag) => <span key={tag}>{tag}</span>)}</div>
-        <div className="hero-orbit" aria-hidden="true"><div className="orbit-core">AI</div><span className="orbit-node node-a" /><span className="orbit-node node-b" /><span className="orbit-node node-c" /></div>
+
+        <div className="hero-stats">
+          {t.hero.stats.map(([value, label, note]) => (
+            <div className="hero-stat" key={label}>
+              <strong>{value}</strong>
+              <span>{label}</span>
+              <small>{note}</small>
+            </div>
+          ))}
+        </div>
       </section>
 
       <section id="projects" className="section section-shell">
