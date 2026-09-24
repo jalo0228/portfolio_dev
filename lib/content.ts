@@ -39,21 +39,15 @@ export const content = {
       items: [
         {
           index: "01",
-          title: "대규모 데이터 자동화 파이프라인 및 고성능 백엔드 구축",
-          description: "Airflow 스케줄러 기반의 연·일 단위 데이터 적재 파이프라인을 자동화하고 병목 구간을 최적화해 작업 처리 시간을 8시간에서 2시간으로 단축했습니다. 계층형 FastAPI 구조를 도입해 누적 70GB 이상의 데이터 환경에서도 3초 미만의 응답 속도를 달성했습니다.",
-          metrics: [["PIPELINE", "75% 단축"], ["BACKEND", "< 3s"]]
+          title: "폐쇄망 보험 도메인 sLLM 및 K8s Agent Ops",
+          description: "Knowledge Graph와 Vector DB를 활용한 DB를 구축하고, 폐쇄망 온프레미스 환경에서 sLLM 기반 문제 해결형 Agent를 구현했습니다. 해당 사업 경진대회에서 상위 7위를 달성했습니다.",
+          metrics: [["ENV", "On-Premise"], ["AGENT", "VectorRAG + GraphRAG"]]
         },
         {
           index: "02",
-          title: "폐쇄망 보험 도메인 sLLM 및 K8s Agent Ops",
-          description: "Knowledge Graph와 Vector DB를 활용해 데이터를 구조화하고, 폐쇄망 온프레미스 환경에서 sLLM 기반 문제 해결형 Agent를 구현했습니다. 해당 사업 경진대회에서 상위 7위를 달성했습니다.",
-          metrics: [["ENV", "On-Premise"], ["RANK", "Top 7"]]
-        },
-        {
-          index: "03",
           title: "에너지 도메인 Multi-Agent Routing 및 RAG 챗봇",
-          description: "에너지 도메인 특화 트레이딩 및 질의응답 시스템을 구축했습니다. 질의 유형에 따라 분기하는 Routing Agent와 SQL Agent, RAG Agent를 연결해 Multi-Agent Workflow를 구현했습니다.",
-          metrics: [["FLOW", "Routing"], ["AGENTS", "SQL + RAG"]]
+          description: "에너지 도메인 특화 트레이딩 및 질의응답 시스템을 구축했습니다. 질의 유형에 따라 분기하는 Routing Agent와 SQL Agent, RAG Agent를 연결해 Multi-Agent Workflow를 구현했습니다. 매일 업데이트되는 데이터를 사용하기 위해 Airflow 스케줄러 기반의 연·일 단위 데이터 적재 파이프라인을 자동화하고 병목 구간을 최적화해 작업 처리 시간을 8시간에서 2시간으로 단축했습니다. 계층형 FastAPI 구조를 도입해 누적 70GB 이상의 데이터 환경에서도 3초 미만의 응답 속도를 달성했습니다.",
+          metrics: [["PIPELINE", "75% 단축"], ["BACKEND", "< 3s"]]
         }
       ]
     },
@@ -176,21 +170,15 @@ export const content = {
       items: [
         {
           index: "01",
-          title: "Large-scale data automation pipeline & high-performance backend",
-          description: "Automated annual and daily ingestion pipelines with Airflow and optimized bottlenecks, reducing processing time from 8 hours to 2 hours. Introduced a layered FastAPI architecture and achieved sub-3-second response times with more than 70GB of accumulated data.",
-          metrics: [["PIPELINE", "75% faster"], ["BACKEND", "< 3s"]]
+          title: "Private-network insurance sLLM & K8s Agent Ops",
+          description: "Built a database using a Knowledge Graph and Vector DB, then implemented a problem-solving sLLM agent in a closed on-premise environment. The project placed in the Top 7 of its business competition.",
+          metrics: [["ENV", "On-Premise"], ["AGENT", "VectorRAG + GraphRAG"]]
         },
         {
           index: "02",
-          title: "Private-network insurance sLLM & K8s Agent Ops",
-          description: "Structured domain data with a Knowledge Graph and Vector DB, and implemented a problem-solving sLLM agent in a closed on-premise environment. The project placed in the Top 7 of its business competition.",
-          metrics: [["ENV", "On-Premise"], ["RANK", "Top 7"]]
-        },
-        {
-          index: "03",
-          title: "Energy-domain Multi-Agent routing & RAG chatbot",
-          description: "Built a domain-specific trading and Q&A system for the energy sector. Implemented a Multi-Agent workflow connecting a query Routing Agent with SQL and RAG agents.",
-          metrics: [["FLOW", "Routing"], ["AGENTS", "SQL + RAG"]]
+          title: "Energy-domain Multi-Agent Routing & RAG chatbot",
+          description: "Built an energy-domain trading and Q&A system. Implemented a Multi-Agent workflow connecting a query Routing Agent with SQL and RAG agents. To use data that updates daily, automated annual and daily ingestion pipelines with Airflow and optimized bottlenecks, reducing processing time from 8 hours to 2 hours. Introduced a layered FastAPI architecture and achieved sub-3-second response times with more than 70GB of accumulated data.",
+          metrics: [["PIPELINE", "75% faster"], ["BACKEND", "< 3s"]]
         }
       ]
     },
