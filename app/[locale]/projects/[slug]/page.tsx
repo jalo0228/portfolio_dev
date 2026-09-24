@@ -1,7 +1,13 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Header from "@/components/Header";
-import { isLocale, isProjectSlug, projectDetails } from "@/lib/content";
+import { isLocale, isProjectSlug, locales, projectDetails } from "@/lib/content";
+
+export function generateStaticParams() {
+  return locales.flatMap((locale) =>
+    Object.keys(projectDetails).map((slug) => ({ locale, slug }))
+  );
+}
 
 export default async function ProjectDetailPage({ params }: { params: Promise<{ locale: string; slug: string }> }) {
   const { locale: rawLocale, slug: rawSlug } = await params;
