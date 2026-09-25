@@ -40,26 +40,9 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
         <h2>{p.architectureTitle}</h2>
 
         {slug === "nittany" ? (
-          <div className="nittany-visual">
-            <div className="nittany-product">
-              <div className="nittany-phone nittany-home">
-                <div className="phone-top"><span>▥</span><span className="buddy-mark">N</span><span>☰</span></div>
-                <div className="buddy-avatar"><span>AI</span></div>
-                <strong>Nittany Buddy</strong>
-                <small>{locale === "ko" ? "오늘의 학습을 시작해볼까요?" : "Ready for today's practice?"}</small>
-                <div className="buddy-actions"><i>✎</i><i>▣</i></div>
-                <div className="phone-nav"><b>⌂</b><span>⌁</span><span>♙</span></div>
-              </div>
-              <div className="nittany-phone nittany-quiz">
-                <div className="phone-status"><span>9:41</span><b>Ⅱ</b></div>
-                <div className="quiz-mascot">N</div>
-                <div className="quiz-card">
-                  <span>QUESTION 1</span>
-                  <strong>Solve 3x - y = 7<br/>and 2x + 3y = 1</strong>
-                </div>
-                <div className="quiz-progress"><i /></div>
-                <div className="answer-list"><button>1 <span>x = 2, y = -1</span></button><button>2 <span>x = 2, y = -423</span></button><button>3 <span>x = 2, y = 0</span></button><button>4 <span>I don't know</span></button></div>
-              </div>
+          <div className="nittany-visual nittany-product-visual">
+            <div className="nittany-product-shot">
+              <img src="/nittanyAI.png" alt={locale === "ko" ? "Nittany Buddy 홈 화면과 수학 퀴즈 화면" : "Nittany Buddy home and math quiz screens"} />
             </div>
             <div className="nittany-flow">
               <span>COURSE MATERIALS</span><i>→</i><span>QUIZ GENERATION</span><i>→</i><span>FEEDBACK</span><i>→</i><span>PERSONALIZED GUIDE</span>
