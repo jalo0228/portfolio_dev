@@ -40,55 +40,56 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
         <h2>{p.architectureTitle}</h2>
 
         {slug === "manufacturing" ? (
-          <div className="manufacturing-architecture">
-            <div className="architecture-data-layer">
-              <div className="architecture-layer-label">{locale === "ko" ? "MANUFACTURING DATA" : "MANUFACTURING DATA"}</div>
-              <div className="architecture-data-cards">
-                <div><span>01</span><strong>{locale === "ko" ? "설비 데이터" : "Equipment"}</strong></div>
-                <div><span>02</span><strong>{locale === "ko" ? "공정 조건" : "Process Conditions"}</strong></div>
-                <div><span>03</span><strong>{locale === "ko" ? "품질 데이터" : "Quality Data"}</strong></div>
+          <div className="manufacturing-architecture architecture-system-map">
+            <div className="system-map-header">
+              <span>SYSTEM FLOW</span>
+              <p>{locale === "ko" ? "제조 데이터를 관계 중심으로 탐색하고, 필요한 Context를 Agent Workflow에 전달" : "Relationship-aware retrieval from manufacturing data into the agent workflow"}</p>
+            </div>
+
+            <div className="system-map-grid">
+              <div className="system-source">
+                <div className="architecture-layer-label">MANUFACTURING DATA</div>
+                <div className="source-stack">
+                  <div><span>01</span><strong>{locale === "ko" ? "설비 데이터" : "Equipment Data"}</strong></div>
+                  <div><span>02</span><strong>{locale === "ko" ? "공정 조건" : "Process Conditions"}</strong></div>
+                  <div><span>03</span><strong>{locale === "ko" ? "품질 데이터" : "Quality Data"}</strong></div>
+                </div>
+              </div>
+
+              <div className="system-flow-arrow"><span>RELATIONSHIP<br/>MODELING</span><i>→</i></div>
+
+              <div className="graphrag-stage">
+                <div className="graphrag-stage-head">
+                  <span>RETRIEVAL PIPELINE</span>
+                  <strong>GraphRAG</strong>
+                </div>
+                <div className="knowledge-graph" aria-label="Manufacturing relationship graph">
+                  <i className="kg-line kg-l1" /><i className="kg-line kg-l2" /><i className="kg-line kg-l3" /><i className="kg-line kg-l4" /><i className="kg-line kg-l5" />
+                  <span className="kg-node kg-equipment">Equipment</span>
+                  <span className="kg-node kg-process">Process</span>
+                  <span className="kg-node kg-parameter">Parameter</span>
+                  <span className="kg-node kg-defect">Defect</span>
+                  <span className="kg-node kg-quality">Quality</span>
+                </div>
+                <div className="graphrag-caption">
+                  <span>ENTITY</span><i>×</i><span>RELATIONSHIP</span><i>×</i><span>SEARCH</span>
+                </div>
+              </div>
+
+              <div className="system-flow-arrow"><span>RETRIEVED<br/>CONTEXT</span><i>→</i></div>
+
+              <div className="system-agents">
+                <div className="architecture-layer-label">MULTI-AGENT</div>
+                <div className="agent-stack">
+                  <div><span>01</span><strong>Analysis</strong><small>{locale === "ko" ? "질문·데이터 분석" : "Query analysis"}</small></div>
+                  <div><span>02</span><strong>Retrieval</strong><small>{locale === "ko" ? "관계 기반 검색" : "Graph retrieval"}</small></div>
+                  <div><span>03</span><strong>Response</strong><small>{locale === "ko" ? "근거 기반 생성" : "Grounded response"}</small></div>
+                </div>
               </div>
             </div>
 
-            <div className="architecture-connector"><span>RELATIONSHIP MODELING</span><i /></div>
-
-            <div className="architecture-core">
-              <div className="architecture-core-badge">RELATIONSHIP GRAPH</div>
-              <strong>GraphRAG</strong>
-              <div className="graph-visual" aria-hidden="true">
-                <span className="graph-node graph-node-a">Equipment</span>
-                <span className="graph-node graph-node-b">Process</span>
-                <span className="graph-node graph-node-c">Quality</span>
-                <span className="graph-node graph-node-d">Result</span>
-                <i className="graph-edge graph-edge-a" />
-                <i className="graph-edge graph-edge-b" />
-                <i className="graph-edge graph-edge-c" />
-              </div>
-              <p>{locale === "ko" ? "Entity · Relationship 기반 Graph Retrieval" : "Entity · Relationship-aware Graph Retrieval"}</p>
-            </div>
-
-            <div className="architecture-connector"><span>CONTEXT</span><i /></div>
-
-            <div className="agent-lanes">
-              <div className="architecture-layer-label">MULTI-AGENT WORKFLOW</div>
-              <div className="agent-lane-grid">
-                <div className="agent-lane"><span>01</span><strong>Analysis Agent</strong><small>{locale === "ko" ? "질문 의도 및 데이터 분석" : "Query & data analysis"}</small></div>
-                <div className="agent-lane"><span>02</span><strong>Retrieval Agent</strong><small>{locale === "ko" ? "관계 기반 Context 검색" : "Relationship-aware context retrieval"}</small></div>
-                <div className="agent-lane"><span>03</span><strong>Response Agent</strong><small>{locale === "ko" ? "근거 기반 응답 생성" : "Grounded response generation"}</small></div>
-              </div>
-            </div>
-
-            <div className="architecture-connector"><span>DELIVERY</span><i /></div>
-
-            <div className="architecture-output">
-              <div>
-                <span>INTERFACE</span>
-                <strong>Microsoft Copilot</strong>
-              </div>
-              <div className="architecture-kpis">
-                <div><strong>95%+</strong><span>{locale === "ko" ? "응답 정확도" : "Response accuracy"}</span></div>
-                <div><strong>-30%</strong><span>{locale === "ko" ? "Token 사용량" : "Token usage"}</span></div>
-              </div>
+            <div className="system-delivery">
+              <span>DELIVERY</span><i>↓</i><strong>Microsoft Copilot</strong>
             </div>
           </div>
         ) : (
