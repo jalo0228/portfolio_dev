@@ -680,3 +680,97 @@ a { color: inherit; text-decoration: none; }
   .architecture-output { grid-template-columns: 1fr; }
   .architecture-kpis { grid-template-columns: 1fr 1fr; }
 }
+
+
+/* Manufacturing case study: visual hierarchy */
+.manufacturing-architecture {
+  margin-top: 42px;
+  padding: clamp(26px, 4vw, 44px);
+  border-color: rgba(94,234,212,.22);
+  background:
+    radial-gradient(circle at 50% 38%, rgba(94,234,212,.09), transparent 30%),
+    rgba(15,23,42,.64);
+  box-shadow: 0 28px 80px rgba(2,6,23,.24);
+}
+.manufacturing-architecture .architecture-core {
+  width: min(560px,100%);
+  padding: 26px 28px 22px;
+  border-color: rgba(94,234,212,.48);
+  background: rgba(13,148,136,.09);
+  box-shadow: inset 0 0 40px rgba(94,234,212,.035);
+}
+.manufacturing-architecture .architecture-core strong { font-size: clamp(28px,4vw,38px); }
+.graph-visual {
+  position: relative;
+  width: min(390px,100%);
+  height: 128px;
+  margin: 20px auto 16px;
+}
+.graph-node {
+  position: absolute;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  width: 72px;
+  height: 30px;
+  border: 1px solid rgba(94,234,212,.35);
+  border-radius: 999px;
+  background: #111c2d;
+  color: #cbd5e1;
+  font-size: 8px;
+  font-weight: 750;
+}
+.graph-node-a { left: 4%; top: 48px; }
+.graph-node-b { left: 38%; top: 8px; border-color: rgba(94,234,212,.7); color: var(--accent); }
+.graph-node-c { right: 4%; top: 48px; }
+.graph-node-d { left: 38%; bottom: 2px; }
+.graph-edge {
+  position: absolute;
+  z-index: 1;
+  left: 20%;
+  top: 62px;
+  width: 29%;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(94,234,212,.18), rgba(94,234,212,.72));
+  transform-origin: right center;
+}
+.graph-edge-a { transform: rotate(-25deg); }
+.graph-edge-b { left: 49%; width: 29%; transform-origin: left center; transform: rotate(25deg); }
+.graph-edge-c { left: 43%; top: 77px; width: 16%; transform: rotate(90deg); }
+.manufacturing-architecture .architecture-connector { padding: 14px 0; }
+.manufacturing-architecture .architecture-connector i { height: 24px; }
+.manufacturing-result { padding: 30px 34px 32px; }
+.result-metrics {
+  display: grid;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  gap: 0;
+  margin-top: 8px;
+}
+.result-metrics > div { padding: 8px 28px 12px 0; }
+.result-metrics > div + div { padding-left: 28px; border-left: 1px solid rgba(94,234,212,.2); }
+.result-metrics strong {
+  display: block;
+  color: var(--accent);
+  font-size: clamp(36px,5vw,54px);
+  line-height: 1;
+  letter-spacing: -.05em;
+}
+.result-metrics span { display: block; margin-top: 9px; color: #cbd5e1; font-size: 11px; font-weight: 700; }
+.result-copy {
+  max-width: 760px;
+  margin: 20px 0 0;
+  padding-top: 20px;
+  border-top: 1px solid rgba(94,234,212,.14);
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.75;
+}
+@media (max-width: 640px) {
+  .manufacturing-architecture { padding: 22px 16px; }
+  .graph-visual { transform: scale(.9); }
+  .result-metrics { grid-template-columns: 1fr 1fr; }
+  .result-metrics > div { padding-right: 14px; }
+  .result-metrics > div + div { padding-left: 14px; }
+  .result-metrics strong { font-size: 34px; }
+  .result-copy { font-size: 13px; }
+}
