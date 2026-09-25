@@ -53,8 +53,17 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
             <div className="architecture-connector"><span>RELATIONSHIP MODELING</span><i /></div>
 
             <div className="architecture-core">
-              <div className="architecture-core-badge">Microsoft</div>
+              <div className="architecture-core-badge">RELATIONSHIP GRAPH</div>
               <strong>GraphRAG</strong>
+              <div className="graph-visual" aria-hidden="true">
+                <span className="graph-node graph-node-a">Equipment</span>
+                <span className="graph-node graph-node-b">Process</span>
+                <span className="graph-node graph-node-c">Quality</span>
+                <span className="graph-node graph-node-d">Result</span>
+                <i className="graph-edge graph-edge-a" />
+                <i className="graph-edge graph-edge-b" />
+                <i className="graph-edge graph-edge-c" />
+              </div>
               <p>{locale === "ko" ? "Entity · Relationship 기반 Graph Retrieval" : "Entity · Relationship-aware Graph Retrieval"}</p>
             </div>
 
@@ -104,9 +113,17 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
         <div className="role-list">{p.roles.map((role) => <span key={role}>{role}</span>)}</div>
       </section>
 
-      <section className="result-section section-shell">
+      <section className={`result-section section-shell ${slug === "manufacturing" ? "manufacturing-result" : ""}`}>
         <p className="eyebrow">05 / {p.resultTitle.toUpperCase()}</p>
-        <h2>{p.result}</h2>
+        {slug === "manufacturing" ? (
+          <>
+            <div className="result-metrics">
+              <div><strong>95%+</strong><span>{locale === "ko" ? "응답 정확도" : "Response accuracy"}</span></div>
+              <div><strong>30%</strong><span>{locale === "ko" ? "Token 사용량 절감" : "Token reduction"}</span></div>
+            </div>
+            <p className="result-copy">{p.result}</p>
+          </>
+        ) : <h2>{p.result}</h2>}
       </section>
 
       <section className="next-project section-shell">
