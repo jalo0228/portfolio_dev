@@ -21,7 +21,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
       <Header locale={locale} suffix={`/projects/${slug}`} />
       <section className="project-hero section-shell">
         <Link className="back-link" href={`/${locale}#projects`}>← {locale === "ko" ? "Projects" : "Projects"}</Link>
-        <p className="eyebrow">CASE STUDY / {p.period}</p>
+        <p className="eyebrow">{locale === "ko" ? "PROJECT" : "PROJECT"} / {p.period}</p>
         <h1>{p.title}</h1>
         <p className="project-hero-subtitle">{p.subtitle}</p>
         <p className="project-hero-overview">{p.overview}</p>
