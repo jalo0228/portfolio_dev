@@ -297,7 +297,7 @@ export const projectDetails = {
       title: "Nittany AI",
       subtitle: "Personalized AI Learning Assistant",
       period: "2025.09 – 2026.02",
-      overview: "수학 학습에 어려움을 겪는 학생을 위해 데일리 퀴즈와 개인화 학습 가이드를 제공하는 양방향 AI 어시스턴트 Nittany Buddy를 기획·개발했습니다. 팀 리더로 일정과 주 단위 마일스톤, 역할 분담을 주도했고 Docker 기반 React·Node.js·Spring Boot·MySQL 개발 환경과 LangChain·Pydantic 기반 LLM 파이프라인을 구축했습니다.",
+      overview: "학생의 학습 결과를 바탕으로 데일리 퀴즈와 맞춤형 학습 가이드를 제공하는 AI 학습 어시스턴트 Nittany Buddy를 기획·개발했습니다. 팀 리더로 일정과 주 단위 마일스톤, 역할 분담을 주도했고 Docker 기반 React·Node.js·Spring Boot·MySQL 개발 환경과 LangChain·Pydantic 기반 LLM 파이프라인을 구축했습니다.",
       problemTitle: "Problem",
       problems: [["Learning Direction", "학생이 무엇을, 어느 수준까지 공부해야 하는지 판단하기 어렵고 개인화된 피드백을 얻기 어려웠습니다."]],
       architectureTitle: "AI Pipeline",
