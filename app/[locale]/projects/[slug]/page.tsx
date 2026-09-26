@@ -39,7 +39,22 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
         <p className="eyebrow">02 / {p.architectureTitle.toUpperCase()}</p>
         <h2>{p.architectureTitle}</h2>
 
-        {slug === "nittany" ? (
+        {slug === "development" ? (
+          <div className="development-visual">
+            <div className="development-product-shot">
+              <img src="https://raw.githubusercontent.com/jalo0228/portfolio_dev/main/todak.png" alt={locale === "ko" ? "육아기록 기반 발달 점검 AI 서비스 화면" : "Development screening AI service interface"} />
+            </div>
+            <div className="development-flow">
+              {p.architecture.map((step, index) => (
+                <div key={step + index}>
+                  <span>{String(index + 1).padStart(2, "0")}</span>
+                  <strong>{step}</strong>
+                  {index < p.architecture.length - 1 && <i>→</i>}
+                </div>
+              ))}
+            </div>
+          </div>
+        ) : slug === "nittany" ? (
           <div className="nittany-visual nittany-product-visual">
             <div className="nittany-product-shot">
               <img src="https://raw.githubusercontent.com/jalo0228/portfolio_dev/main/nittanyAI.png" alt={locale === "ko" ? "Nittany Buddy 홈 화면과 수학 퀴즈 화면" : "Nittany Buddy home and math quiz screens"} />
