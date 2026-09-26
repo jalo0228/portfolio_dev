@@ -42,7 +42,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
         {slug === "nittany" ? (
           <div className="nittany-visual nittany-product-visual">
             <div className="nittany-product-shot">
-              <img src="/nittanyAI.png" alt={locale === "ko" ? "Nittany Buddy 홈 화면과 수학 퀴즈 화면" : "Nittany Buddy home and math quiz screens"} />
+              <img src="https://raw.githubusercontent.com/jalo0228/portfolio_dev/main/nittanyAI.png" alt={locale === "ko" ? "Nittany Buddy 홈 화면과 수학 퀴즈 화면" : "Nittany Buddy home and math quiz screens"} />
             </div>
             <div className="nittany-flow">
               <span>COURSE MATERIALS</span><i>→</i><span>QUIZ GENERATION</span><i>→</i><span>FEEDBACK</span><i>→</i><span>PERSONALIZED GUIDE</span>
